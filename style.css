@@ -80,7 +80,7 @@ header .highlight, header #current a{
 }
 
 header a:hover {
-    color #ccc;
+    color: #ccc;
     font-weight: bold;
 }
 
@@ -90,7 +90,7 @@ header a:hover {
     background-position: center;
     background-size: cover;
     text-align: center;
-    color #fff;
+    color: #fff;
 }
 
 #showcase h1 {
@@ -104,7 +104,7 @@ header a:hover {
 }
 
 #newsletter {
-    background-color: #2d2b3e;
+    background-color: #170b88;
     padding: 15px;
     color: #fff
 }
@@ -148,7 +148,7 @@ header a:hover {
 }
 
 #about {
-    background-color: #2d2b3e;
+    background-color: #170b88;
     padding: 20px;
 }
 
@@ -196,5 +196,27 @@ footer {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    header .container,
+    #newsletter .container,
+    #boxes .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 
+    #showcase .container {
+        padding-bottom: 50px;
+    }
+
+    #boxes .container .box {
+        width: 80%;
+    }
+
+    #about .container,
+    #services .container {
+        grid-template-columns: 1fr;
+    }
+}
 
